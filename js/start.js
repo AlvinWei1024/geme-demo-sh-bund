@@ -113,7 +113,7 @@ var Girl=function(){
     		left = 384 + (Math.random() * (600 - 250) + 250);//否则从屏幕外取
     	}
     	var girl = $('<div></div>').addClass('girl').css('left',left).data('left', left);
-    	var talk = $('<div>Hi, Boy<a name="get_girl" href="http://github.com/alvinwei1024" target="_Blank">约走</a></div>').addClass('talk').appendTo(girl);
+    	var talk = $('<div>Hi, Boy<a name="get_girl" href="http://alvinwei1024.github.io/geme-demo-sh-bund" target="_Blank">约走</a></div>').addClass('talk').appendTo(girl);
     	this.roles.push(girl);
     	$(document).trigger('girl:created',girl);//触发girl:created
 	}
