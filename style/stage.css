@@ -1,0 +1,310 @@
+@charset "utf-8";
+@-webkit-keyframes run-left {
+  0% { background-position: -34px -36px; }
+  25% { background-position: -234px -36px; }
+  50% { background-position: -434px -36px; }
+  75% { background-position: -634px -36px; }
+  100% { background-position: -34px -36px; } 
+}
+
+@-moz-keyframes run-left {
+  0% { background-position: -34px -36px; }
+  25% { background-position: -234px -36px; }
+  50% { background-position: -434px -36px; }
+  75% { background-position: -634px -36px; }
+  100% { background-position: -34px -36px; } 
+}
+
+@-ms-keyframes run-left {
+  0% { background-position: -34px -36px; }
+  25% { background-position: -234px -36px; }
+  50% { background-position: -434px -36px; }
+  75% { background-position: -634px -36px; }
+  100% { background-position: -34px -36px; } 
+}
+
+@keyframes run-left {
+  0% { background-position: -34px -36px; }
+  25% { background-position: -234px -36px; }
+  50% { background-position: -434px -36px; }
+  75% { background-position: -634px -36px; }
+  100% { background-position: -34px -36px; } 
+}
+@-webkit-keyframes run-right {
+  0% { background-position: -334px -186px; }
+  25% { background-position: -534px -186px; }
+  50% { background-position: -734px -186px; }
+  75% { background-position: -134px -186px; }
+  100% { background-position: -334px -186px; } 
+}
+
+@-moz-keyframes run-right {
+  0% { background-position: -334px -186px; }
+  25% { background-position: -434px -186px; }
+  50% { background-position: -634px -186px; }
+  75% { background-position: -234px -186px; }
+  100% { background-position: -334px -186px; } 
+}
+
+@-ms-keyframes run-right {
+  0% { background-position: -334px -186px; }
+  25% { background-position: -434px -186px; }
+  50% { background-position: -634px -186px; }
+  75% { background-position: -234px -186px; }
+  100% { background-position: -334px -186px; } 
+}
+
+@keyframes run-right {
+  0% { background-position: -334px -186px; }
+  25% { background-position: -434px -186px; }
+  50% { background-position: -634px -186px; }
+  75% { background-position: -234px -186px; }
+  100% { background-position: -334px -186px; } 
+}
+
+@-webkit-keyframes blinking {
+  0% { background-position: 0 0; }
+  25% { background-position: -5px 0; }
+  50% { background-position: -10px 0; }
+  75% { background-position: -5px 0; }
+  100% { background-position: 0 0; } 
+}
+
+@-moz-keyframes blinking {
+  0% { background-position: 0 0; }
+  25% { background-position: -5px 0; }
+  50% { background-position: -10px 0; }
+  75% { background-position: -5px 0; }
+  100% { background-position: 0 0; } 
+}
+
+@-ms-keyframes blinking {
+  0% { background-position: 0 0; }
+  25% { background-position: -5px 0; }
+  50% { background-position: -10px 0; }
+  75% { background-position: -5px 0; }
+  100% { background-position: 0 0; } 
+}
+
+@keyframes blinking {
+  0% { background-position: 0 0; }
+  25% { background-position: -5px 0; }
+  50% { background-position: -10px 0; }
+  75% { background-position: -5px 0; }
+  100% { background-position: 0 0; } 
+}
+@-webkit-keyframes message-show{
+  0%{color: rgba(232, 88, 24,1);}
+  40%{color: rgba(232, 88, 24,1);}
+  50%{color: rgba(232, 88, 24,0);}
+  60%{color: rgba(232, 88, 24,1);}
+  100%{color: rgba(232, 88, 24,1);}
+}
+@-moz-keyframes message-show{
+  0%{color: rgba(232, 88, 24,1);}
+  40%{color: rgba(232, 88, 24,1);}
+  50%{color: rgba(232, 88, 24,0);}
+  60%{color: rgba(232, 88, 24,1);}
+  100%{color: rgba(232, 88, 24,1);}
+}
+@-ms-keyframes message-show{
+  0%{color: rgba(232, 88, 24,1);}
+  40%{color: rgba(232, 88, 24,1);}
+  50%{color: rgba(232, 88, 24,0);}
+  60%{color: rgba(232, 88, 24,1);}
+  100%{color: rgba(232, 88, 24,1);}
+}
+@keyframes message-show{
+  0%{color: rgba(232, 88, 24,1);}
+  40%{color: rgba(232, 88, 24,1);}
+  50%{color: rgba(232, 88, 24,0);}
+  60%{color: rgba(232, 88, 24,1);}
+  100%{color: rgba(232, 88, 24,1);}
+}
+body {
+  background-color: #222;
+  padding: 0;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: helvetica, arial, 微软雅黑;
+  font-size: 16px;
+  line-height: 1.5em; 
+}
+body a {
+  cursor:pointer;
+}
+body .stage {
+  overflow: hidden;
+  width: 384px;
+  height: 512px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: white;
+  background-image: url(../images/bg.jpg);
+  background-size: auto 150%;
+  background-repeat: no-repeat;
+  background-position: 0 120%;
+  position: relative; 
+}
+body .stage .ground {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background-image: url(../images/ground.jpg);
+  background-size: auto auto;
+  background-repeat: repeat-x;
+  background-position: 0 0; 
+}
+body .role {
+  z-index: 999;
+  position: absolute;
+  bottom: 64px;
+  width: 36px;
+  height: 85px;
+  background-image: url(../images/role.png);
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  background-position: -334px -186px;
+}
+
+body .role.runright {
+  -webkit-animation:  run-right 0.6s steps(1) infinite;
+  -moz-animation: run-right 0.6s steps(1) infinite;
+  -o-animation: run-right 0.6s steps(1) infinite;
+  -ms-animation: run-right 0.6s steps(1) infinite; 
+}
+body .role.runleft {
+  -webkit-animation:  run-left 0.6s steps(1) infinite;
+  -moz-animation: run-left 0.6s steps(1) infinite;
+  -o-animation: run-left 0.6s steps(1) infinite;
+  -ms-animation: run-left 0.6s steps(1) infinite; }
+}
+
+body .role.stop {
+    -webkit-animation:  none;
+  -moz-animation: none;
+  -o-animation: none;
+  -ms-animation: none;
+  }
+body .girl {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: 64px;
+  width: 36px;
+  height: 85px;
+  background-image: url(../images/girl.png);
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  background-position: -34px -306px; 
+} 
+body .girl.hello {
+  background-position: -34px -6px; 
+}
+body .talk{
+  display: none;
+  top: -45px;
+  height: 45px;
+  width: 60px;
+  border: solid 1px;
+  position: absolute;
+  color: lightcoral;
+  text-align: center;
+}
+body .talk:before{
+  content: '';
+  top: 45px;
+  border-color: lightcoral transparent transparent transparent;
+  border-style: solid;
+  border-width: 10px 10px 0px 10px;
+  width: 0;
+  height: 0;
+  position: absolute;
+  color: lightcoral;
+}
+body .girl.hello .talk{
+  display: block;
+}
+body .girl.bye {
+  background-position: -34px -306px; 
+}
+body .girl.bye .talk{
+  display: none;
+}
+
+body .cloud {
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  background-image: url(../images/cloud.png);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: 0px 0; 
+}
+body .arrow-right {
+  z-index: 999;
+  position: absolute;
+  right: 0;
+  width: 60px;
+  height: 40px;
+  background-image: url(../images/arrow.png);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: 0px 0; 
+  -webkit-animation: blinking 0.6s steps(1) infinite;
+  -moz-animation: blinking 0.6s steps(1) infinite;
+  -o-animation: blinking 0.6s steps(1) infinite;
+  -ms-animation: blinking 0.6s steps(1) infinite; 
+  
+}
+body .arrow-left {
+  z-index: 999;
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  background-image: url(../images/arrow.png);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: 0px 0; 
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);   /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Safari and Chrome */
+  -o-transform: rotate(180deg);    /* Opera */
+  -moz-transform: rotate(180deg);    /* Firefox */
+  -webkit-animation: blinking 0.6s steps(1) infinite;
+  -moz-animation: blinking 0.6s steps(1) infinite;
+  -o-animation: blinking 0.6s steps(1) infinite;
+  -ms-animation: blinking 0.6s steps(1) infinite; 
+}
+.start-message{
+  position: relative;
+  z-index: 1999;
+  width: 200px;
+  margin: 100px auto;
+  color: rgb(232, 88, 24);
+  -webkit-animation: message-show 1s steps(1) infinite;
+  -moz-animation: message-show 1s steps(1) infinite;
+  -o-animation: message-show 1s steps(1) infinite;
+  -ms-animation: message-show 1s steps(1) infinite; 
+}
+body .stop .arrow-right,
+body .stop .arrow-left,
+body .stop .start-message {
+  display: block;
+}
+body .running .arrow-right,
+body .running .arrow-left,
+body .running .start-message {
+  display: none;
+}
+
+body .left-disable .arrow-right {
+  display: block;
+}
+body .left-enable .arrow-right {
+  display: none;
+}
+
